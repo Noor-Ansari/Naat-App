@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3f9fa;
+}
+
+.list-page {
+  background-color: #d3ddde !important;
+  overflow-y: auto;
+}

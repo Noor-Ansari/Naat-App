@@ -1,0 +1,11 @@
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: #25a225;
+}
+
+.player-buttons:active {
+  outline: 2px solid #fff;
+}

@@ -1,0 +1,39 @@
+.display-image {
+  width: 100vw;
+  height: 70vh;
+}
+
+.display-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.player-container {
+  display: grid;
+  grid-template-rows: auto 7rem 5rem;
+}
+
+.audio-title {
+  background-color: green;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.audio-title h1 {
+  font-size: 1.2rem;
+  font-family: monospace;
+  width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

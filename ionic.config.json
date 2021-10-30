@@ -1,0 +1,7 @@
+{
+  "name": "Naat App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

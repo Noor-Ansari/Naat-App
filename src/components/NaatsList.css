@@ -1,0 +1,22 @@
+.list-item img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 1px solid #f56ed8;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.list-item p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f56ed8;
+  word-break: break-all;
+}
+
