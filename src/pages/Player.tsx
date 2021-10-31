@@ -1,8 +1,9 @@
 import { useHistory, useParams } from "react-router-dom";
 import naats from "../NaatsList";
-import "./Player.css";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
+import {ArrowBack} from "react-ionicons";
+import "./Player.css";
 
 function Player() {
   const { id } = useParams() as any;
@@ -22,22 +23,24 @@ function Player() {
 
   return (
     <div className="player-container">
+      <div className="info-bar">
+        <p className="back-icon"><ArrowBack color="#fff"/></p>
+        <p className="title">Player</p>
+      </div>
       <div className="display-image">
-        <img src="assets/icon.jpg" alt="display" />
+        {/* <img src="assets/icon.jpg" alt="display" /> */}
       </div>
 
       <div className="audio-title">
         <h1>{name}</h1>
       </div>
-      <div className="player-controls">
-        {/* <AudioPlayer
+        <AudioPlayer
           src={url}
           onClickPrevious={skipBackward}
           onClickNext={skipForward}
           showSkipControls={true}
           showJumpControls={false}
-        /> */}
-      </div>
+        />
     </div>
   );
 }
