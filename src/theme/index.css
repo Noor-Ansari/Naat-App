@@ -5,10 +5,5 @@
 }
 
 body {
-  background-color: #e3f9fa;
-}
-
-.list-page {
-  background-color: #d3ddde !important;
-  overflow-y: auto;
+  background-color: rgb(15, 15, 63) !important;
 }

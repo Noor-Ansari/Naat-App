@@ -1,4 +1,13 @@
-ion-toolbar {
-  --background: #25a225 !important;
-  color:#fff;
+.naats-page-container {
+  --background: rgb(15, 15, 63) !important;
+}
+
+.all-naats-info-bar {
+  --background: #cd2e2e !important;
+  color: #fff;
+  padding : 1rem 2rem;
+}
+
+.all-naats-title{
+  width: 90% !important;
 }

@@ -18,14 +18,20 @@
 
 .info-bar {
   display: flex;
-  padding: 1.5rem 1rem;
+  padding: 2.5rem 1rem;
+  align-items: center;
+  height: 3rem;
 }
 
 .info-bar .title {
-  width: 80%;
+  width: 70%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+}
+
+.info-bar .back-button{
+  --background : #cd2e2e !important;
 }
 
 .audio-title {

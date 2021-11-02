@@ -9,15 +9,15 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
+        <Route exact path="/">
+          <AllNaats />
+        </Route>
         <Route path="/all-naats/:id">
           <Player />
         </Route>
-        <Route exact path="/all-naats">
+        {/* <Route exact path="/all-naats">
           <AllNaats />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        </Route> */}
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

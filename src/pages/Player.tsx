@@ -3,6 +3,7 @@ import naats from "../NaatsList";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import {ArrowBack} from "react-ionicons";
+import { IonButton } from "@ionic/react";
 import "./Player.css";
 
 function Player() {
@@ -24,7 +25,7 @@ function Player() {
   return (
     <div className="player-container">
       <div className="info-bar">
-        <p className="back-icon"><ArrowBack color="#fff"/></p>
+        <IonButton className="back-button" onClick={() => history.push('/')}><ArrowBack color="#fff"/></IonButton>
         <p className="title">Player</p>
       </div>
       <div className="display-image">
