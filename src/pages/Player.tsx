@@ -2,8 +2,8 @@ import { useHistory, useParams } from "react-router-dom";
 import naats from "../NaatsList";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import {ArrowBack} from "react-ionicons";
-import { IonButton } from "@ionic/react";
+import { ArrowBack } from "react-ionicons";
+import { IonButton, IonContent, IonText } from "@ionic/react";
 import "./Player.css";
 
 function Player() {
@@ -25,23 +25,29 @@ function Player() {
   return (
     <div className="player-container">
       <div className="info-bar">
-        <IonButton className="back-button" onClick={() => history.push('/')}><ArrowBack color="#fff"/></IonButton>
-        <p className="title">Player</p>
+        <IonButton className="back-button" onClick={() => history.push("/")}>
+          <ArrowBack color="#fff" />
+        </IonButton>
+        <IonText color="light" mode="md" className="title">
+          Player
+        </IonText>
       </div>
       <div className="display-image">
-        {/* <img src="assets/icon.jpg" alt="display" /> */}
+        <img src="assets/play screen.png" alt="display" />
       </div>
 
       <div className="audio-title">
-        <h1>{name}</h1>
+        <IonText color="light" mode="md">
+          {name}
+        </IonText>
       </div>
-        <AudioPlayer
-          src={url}
-          onClickPrevious={skipBackward}
-          onClickNext={skipForward}
-          showSkipControls={true}
-          showJumpControls={false}
-        />
+      <AudioPlayer
+        src={url}
+        onClickPrevious={skipBackward}
+        onClickNext={skipForward}
+        showSkipControls={true}
+        showJumpControls={false}
+      />
     </div>
   );
 }

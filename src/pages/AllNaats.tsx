@@ -4,6 +4,7 @@ import {
   IonHeader,
   IonPage,
   IonSearchbar,
+  IonText,
   IonToolbar,
 } from "@ionic/react";
 import React, { useState } from "react";
@@ -17,12 +18,14 @@ function AllNaats() {
   const handleInput = (e: any) => {
     setInput(e.target.value);
   };
-  
+
   return (
     <>
       <IonHeader>
         <div className="info-bar">
-          <p className="all-naats-title title">All Naats</p>
+          <IonText color="light" className="all-naats-title title" mode="md">
+            All Naats
+          </IonText>
         </div>
       </IonHeader>
       <IonSearchbar

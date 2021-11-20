@@ -5,9 +5,10 @@
 .all-naats-info-bar {
   --background: #cd2e2e !important;
   color: #fff;
-  padding : 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
-.all-naats-title{
+.all-naats-title {
   width: 90% !important;
+  color: #fff;
 }

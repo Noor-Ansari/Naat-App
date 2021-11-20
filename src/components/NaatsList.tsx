@@ -34,18 +34,18 @@ const NaatsList = ({ input }: Props) => {
   }
 
   return (
-    <>
-      <IonList className="naat-list">
-        {filteredNaatList.map(({ name, url }, idx) => (
-          <div className="list-item" color="primary" onClick={() => handleClick(name)}>
-            <img src="assets/play screen.png" alt="icon" />
-            <IonText>
-              <p>{name}</p>
-            </IonText>
-          </div>
-        ))}
-      </IonList>
-    </>
+    <IonList className="naat-list">
+      {filteredNaatList.map(({ name, url }, idx) => (
+        <IonItem
+          className="list-item"
+          color="primary"
+          onClick={() => handleClick(name)}
+        >
+          <img src="assets/play screen.png" alt="icon" />
+          <IonText>{name}</IonText>
+        </IonItem>
+      ))}
+    </IonList>
   );
 };
 
